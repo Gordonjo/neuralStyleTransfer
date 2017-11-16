@@ -1,9 +1,9 @@
 Neural Style Transfer
 =======
-This repository is the implementation of the article on `Neural Style Transfer <https://arxiv.org/abs/1508.06576>`_.
+This repository contains a TensorFlow implementation of the article on `Neural Style Transfer <https://arxiv.org/abs/1508.06576>`_.
 
 
-The implementation is in `TensorFlow <>`_, and uses `VGG16 <https://arxiv.org/abs/1409.1556>`_ which needs to be downloaded from the internet (the vgg16.py enables downloading the pretrained model).
+The implementation is in `TensorFlow <http://download.tensorflow.org/paper/whitepaper2015.pdf>`_, and uses `VGG16 <https://arxiv.org/abs/1409.1556>`_ which needs to be downloaded from the internet (the vgg16.py enables downloading the pretrained model).
 
 
 Installation
