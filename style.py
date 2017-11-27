@@ -9,7 +9,7 @@ def style_transfer(content_image, style_image,
                    content_layer_ids, style_layer_ids,
                    weight_content=1.5, weight_style=10.0,
                    weight_denoise=0.3, num_iterations=120, 
-		   step_size=10.0, img_file='what'):
+		   step_size=10.0):
     """
     Use gradient descent to find an image that minimizes the
     loss-functions of the content-layers and style-layers. This
@@ -143,9 +143,6 @@ def style_transfer(content_image, style_image,
                         style_image=style_image,
                         mixed_image=mixed_image)
             
-    print()
-    print("Final image saved")
-    save_image(mixed_image, img_file)
 
     # Close the TensorFlow session to release its resources.
     session.close()

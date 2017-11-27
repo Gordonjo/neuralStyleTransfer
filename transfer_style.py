@@ -17,7 +17,7 @@ content_image = load_image(sys.argv[1],max_size=None)
 style_image = load_image(sys.argv[2],max_size=None)
 
 ## identify the layers in VGG16 that we want to use for style transfer
-content_layer_ids = [4,5,6,7]
+content_layer_ids = [4]
 # The VGG16-model has 13 convolutional layers.
 # This selects all those layers as the style-layers.
 # This is somewhat slow to optimize.
@@ -33,8 +33,10 @@ img = style_transfer(content_image=content_image,
                      weight_style=10.0,
                      weight_denoise=0.3,
                      num_iterations=250,
-                     step_size=10.0,
-		     img_file=sys.argv[3])
+                     step_size=10.0)
+
+save_image(img, sys.argv[3])
+
 
 
 
